@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Payments</title>
+	<script src="js/accessTable.js"></script>
+	<link href="css/make-pay.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+	<header id="header" class="container">
+		<div class="header-contents">
+			<div id="logo">
+				<h1><a href="#">Bagru Society</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#" accesskey="1" title="">Home</a></li>
+					<li class="active"><a href="#" accesskey="2" title="">Payments</a></li>
+					<li><a href="#" accesskey="3" title="">Support</a></li>
+					<li><a href="#" accesskey="4" title="">Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="page">
+		<div class="container">
+
+
+
+			<div class="title">
+				<h2>Payments</h2>
+				<p>All your bills at one place.</p>
+			</div>
+
+
+
+			<div class="box">
+				<img src="images/pic07.jpg"/>
+				<div class="details">
+					<h1 id="housenumber">wrgaewrgar</h1>
+					<p id="name"></p>
+					<p id="phone"></p>
+					<p id="email"></p>
+					<p id="billheading">Payment Details</p>
+					<p id="elec"></p>
+					<p id="water"></p>
+					<p id="gym"></p>
+					<p id="total"></p>
+				</div>
+				<script>
+					document.getElementById("housenumber").innerHTML = "House Number " + houseinfo[i][0];
+					document.getElementById("name").innerHTML = "Name: " + houseinfo[i][1];
+					document.getElementById("phone").innerHTML = "Contact Number: " + houseinfo[i][2];
+					document.getElementById("email").innerHTML = "E-mail: " + houseinfo[i][3];
+					document.getElementById("elec").innerHTML = "Electricity Payment: Rs." + houseinfo[i][4];
+					document.getElementById("water").innerHTML = "Water Payment: Rs." + houseinfo[i][5];
+					if(houseinfo[i][6]==0)
+						document.getElementById("gym").innerHTML = "Gym Membership: No";
+					else	
+						document.getElementById("gym").innerHTML = "Gym Membership: Rs." + houseinfo[i][6];
+					document.getElementById("total").innerHTML = "Total Payable Amount: Rs." + (houseinfo[i][4] + houseinfo[i][5] + houseinfo[i][6]);
+				</script>
+			</div>
+
+			
+
+
+		</div>
+	</div>
+
+
+
+	<footer id="copyright" class="container">
+		<p>&copy; This page was created by Jeevansh Kumar under mentorship of Mr. Harish Sharma. All rights reserved.</p>
+		<button onclick="window.print()">Print</button>
+	</footer>
+
+
+</body>
+</html>
