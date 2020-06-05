@@ -1,3 +1,6 @@
+/*********************************************************************************/
+/* Default Properties                                                           */
+/*********************************************************************************/
 	html, body
 	{
 		height: 100%;
@@ -175,6 +178,7 @@
 	.box img
 	{
 		width: 1020px;
+		height:640px;
 		float: left;
 		margin:0 10px;
 	}
@@ -182,11 +186,30 @@
 	.box .details
 	{
 		position: absolute;
-		top: 60px;
+		top: 50px;
 		left: 60px;
-		color: #fff;
+		color: rgba(255,255,255,0.8);
 
 	}
+
+	#housenumber, #billheading
+	{
+		font-family: "Bodoni MT Black";
+		text-decoration: underline;
+	}
+
+	button
+	{
+		background-color: rgba(255,255,255,0.8);
+		border: none;
+		color: #3b1e59;
+		padding: 10px 24px;
+		text-align: center;
+		display: inline-block;
+		font-size: 16px;
+		cursor:pointer;
+	}
+
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
